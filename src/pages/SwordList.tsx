@@ -63,6 +63,7 @@ export default function SwordList() {
   const handleFilterChange = (key: keyof SwordFilterParams, value: string | undefined) => {
     setFilters(prev => ({
       ...prev,
+      page: 1,
       [key]: value === '全部' ? undefined : value,
     }));
   };

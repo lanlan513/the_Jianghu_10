@@ -54,7 +54,7 @@ export const getSwords = (params: SwordFilterParams): SwordListResponse => {
 
 export const getPopularSwords = (limit: number = 6): Sword[] => {
   return [...swords]
-    .sort((a, b) => Math.round(b.popularity / 1000) - Math.round(a.popularity / 1000))
+    .sort((a, b) => b.popularity - a.popularity)
     .slice(0, limit);
 };
 
