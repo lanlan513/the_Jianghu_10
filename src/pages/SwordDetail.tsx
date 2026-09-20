@@ -213,9 +213,9 @@ export default function SwordDetail() {
                   <div>
                     <div className="font-brush text-3xl text-cinnabar-600">
                       {Math.round(
-                        (sword.attributes.sharpness + 
-                         sword.attributes.hardness + 
-                         sword.attributes.hardness + 
+                        (sword.attributes.sharpness +
+                         sword.attributes.hardness +
+                         sword.attributes.flexibility +
                          sword.attributes.craftsmanship) / 4
                       )}
                     </div>
